@@ -13,6 +13,11 @@ cp test-task/.env.default test-task/.env
 cp docker/etc/web/conf.d/default.conf.dist docker/etc/web/conf.d/default.conf
 ```
 
+(Возможно понадобится раздать права)
+```shell
+sudo chmod -R 777 .
+```
+
 Устанавливаем зависимости composer
 ```shell
 make install

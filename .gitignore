@@ -7,7 +7,6 @@
 /test-task/.env
 /.idea/*
 /*.idea
-/files/*
 .env
 .phpunit.result.cache
 
