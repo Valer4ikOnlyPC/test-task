@@ -1,0 +1,26 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+           https://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="test_task.domain.desadv.creator_from_file"
+                 class="TestTask\Core\Context\Domain\Service\Desadv\CreatorFromFile\CreatorFromFileService"
+                 public="true">
+            <argument type="service"
+                      id="test_task.doctrine.repository.desadv"/>
+            <argument type="string">%env.test_task.files_dir%</argument>
+        </service>
+        <service
+                id="TestTask\Core\Context\Application\Service\Desadv\CreateDesadvFromFileService\CreateDesadvFromFileService"
+                class="TestTask\Core\Context\Application\Service\Desadv\CreateDesadvFromFileService\CreateDesadvFromFileService">
+            <argument type="service"
+                      id="test_task.domain.desadv.creator_from_file"/>
+        </service>
+        <service
+                id="TestTask\Core\Context\Application\Service\Desadv\GetDesadvService\GetDesadvService"
+                class="TestTask\Core\Context\Application\Service\Desadv\GetDesadvService\GetDesadvService">
+            <argument type="service"
+                      id="test_task.doctrine.repository.desadv"/>
+        </service>
+    </services>
+</container>

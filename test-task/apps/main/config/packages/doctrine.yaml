@@ -1,0 +1,6 @@
+doctrine:
+  dbal:
+    default_connection: ~
+    connections:
+      test_task:
+        charset: CP1251

@@ -1,0 +1,17 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+           https://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="test_task.domain.number_generation.number_generation_service"
+                 class="TestTask\Core\Context\Domain\Service\NumberGeneration\NumberGenerationService\NumberGenerationService"
+                 public="true">
+        </service>
+        <service
+                id="TestTask\Core\Context\Application\Service\NumberGeneration\NumberGenerationService\NumberGenerationService"
+                class="TestTask\Core\Context\Application\Service\NumberGeneration\NumberGenerationService\NumberGenerationService">
+            <argument type="service"
+                      id="test_task.domain.number_generation.number_generation_service"/>
+        </service>
+    </services>
+</container>

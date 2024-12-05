@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<routes xmlns="http://symfony.com/schema/routing"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/routing
+        https://symfony.com/schema/routing/routing-1.0.xsd">
+    <route id="desadv:create-from-base64" path="/api/desadv/create-from-base64" methods="POST">
+        <default key="_service">TestTask\Core\Context\Application\Service\Desadv\CreateDesadvFromFileService\CreateDesadvFromFileService</default>
+        <default key="_request">TestTask\Core\Context\Application\Service\Desadv\CreateDesadvFromFileService\Request\CreateDesadvFromFileRequest</default>
+    </route>
+    <route id="desadv:get" path="/api/desadv/get" methods="GET">
+        <default key="_service">TestTask\Core\Context\Application\Service\Desadv\GetDesadvService\GetDesadvService</default>
+        <default key="_request">TestTask\Core\Context\Application\Service\Desadv\GetDesadvService\Request\GetDesadvRequest</default>
+    </route>
+    <route id="number:generate" path="/api/number/generate" methods="GET">
+        <default key="_service">TestTask\Core\Context\Application\Service\NumberGeneration\NumberGenerationService\NumberGenerationService</default>
+        <default key="_request">TestTask\Core\Context\Application\Service\NumberGeneration\NumberGenerationService\Request\NumberGenerationRequest</default>
+    </route>
+</routes>

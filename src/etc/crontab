@@ -1,0 +1,2 @@
+
+* * * * * sudo php /usr/data/www/onno/test-task/apps/main/bin/console core:generation-task:create 50 > /dev/null 2>&2

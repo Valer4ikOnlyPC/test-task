@@ -1,0 +1,12 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+           https://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="test_task.doctrine.repository.desadv"
+                 class="TestTask\Core\Context\Infrastructure\Persistence\Doctrine\Repository\Desadv\DoctrineDesadvRepository">
+            <argument type="service"
+                      id="doctrine.orm.test_task_entity_manager"/>
+        </service>
+    </services>
+</container>

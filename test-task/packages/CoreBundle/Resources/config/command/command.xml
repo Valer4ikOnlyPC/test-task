@@ -1,0 +1,15 @@
+<container xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://symfony.com/schema/dic/services"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+           https://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="test_task.command.desadv.create_from_file"
+                 class="TestTask\CoreBundle\Command\Desadv\CreateDesadvFromFileCommand">
+            <tag name="console.command"/>
+        </service>
+        <service id="test_task.command.number_generation.number_generation_command"
+                 class="TestTask\CoreBundle\Command\NumberGeneration\NumberGenerationCommand">
+            <tag name="console.command"/>
+        </service>
+    </services>
+</container>

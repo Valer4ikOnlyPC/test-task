@@ -1,0 +1,14 @@
+/bin/*
+/vendor/*
+/docker/dbdata/*
+/test-task/test-task/apps/main/cache/*
+/test-task/test-task/apps/main/logs/*
+/test-task/test-task/.env
+/test-task/.env
+/.idea/*
+/*.idea
+/files/*
+.env
+.phpunit.result.cache
+
+/docker/etc/web/conf.d/default.conf
